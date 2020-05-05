@@ -1,0 +1,6 @@
+.textChange {
+    color: white;
+}
+.textChange:hover {
+    color: black;
+}
