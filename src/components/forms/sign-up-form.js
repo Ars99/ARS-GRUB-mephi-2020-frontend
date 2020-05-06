@@ -7,8 +7,7 @@ const RegistrationForm = () => {
 
 	const textStyle = {color: 'white'};
 
-    return(
-        <div className="body">   
+    return( 
 			<form className="form-signin">
 				<img className="mb-1" src="https://vineandwine.vin/upload/medialibrary/8aa/logotype_vineandwine_Copy.svg" alt="Wine" width="300" height="500"/>
 				<div className="form-group">
@@ -22,8 +21,7 @@ const RegistrationForm = () => {
 				<button className="btn btn-lg btn-primary btn-block" type="submit"><Link to='main' style= {textStyle}>Sign up</Link></button>
 				<button className="btn btn-lg btn-primary btn-block" type="submit"><Link to='login' style= {textStyle}>Have an account? Log in!</Link></button>
 				<p className="mt-5 text-muted">&copy; 2020</p>
-			</form> 
-		</div>   
+			</form>   
     );
 }
 
