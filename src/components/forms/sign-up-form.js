@@ -9,7 +9,7 @@ const RegistrationForm = () => {
 
     return( 
 			<form className="form-signin">
-				<img className="mb-1" src="https://vineandwine.vin/upload/medialibrary/8aa/logotype_vineandwine_Copy.svg" alt="Wine" width="300" height="500"/>
+				<img className="mb-1" src="https://vineandwine.vin/upload/medialibrary/8aa/logotype_vineandwine_Copy.svg" alt="Wine" width="72" height="72"/>
 				<div className="form-group">
 					<input type="email" id="inputEmail" className="form-control" placeholder="Email address" required autoFocus/>
 				    <input type="password" id="inputPassword" className="form-control center" placeholder="Password" required/>
