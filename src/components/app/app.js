@@ -2,9 +2,11 @@ import React from 'react';
 import { RegistrationPage, LoginPage, MainPage } from '../pages';
 import './app.css';
 import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import WithWineService from '../hoc';
 
 
-const App = () => {
+const App = ({WineService}) => {
+    console.log(WineService.getItems());
     return (
         <Router>
             <Switch>
@@ -17,4 +19,4 @@ const App = () => {
     );
 }
 
-export default App;
+export default WithWineService()(App);

@@ -1,11 +1,12 @@
 import React from 'react';
 import './forms.css';
 import {Link} from 'react-router-dom';
+import {StartBtn} from '../buttons';
+import CheckBox from '../checkbox';
 
 
 const RegistrationForm = () => {
 
-	const textStyle = {color: 'white'};
 
     return( 
 			<form className="form-signin">
@@ -15,11 +16,9 @@ const RegistrationForm = () => {
 				    <input type="password" id="inputPassword" className="form-control center" placeholder="Password" required/>
                     <input type="password" id="inputPasswordSecondTime" className="form-control" placeholder="Please type your password once again" required />
 				</div>
-				<div className="checkbox mb-3">               
-					<label><input type="checkbox" value="Remember me"/> Remember me</label>                
-				</div>
-				<button className="btn btn-lg btn-primary btn-block" type="submit"><Link to='main' style= {textStyle}>Sign up</Link></button>
-				<button className="btn btn-lg btn-primary btn-block" type="submit"><Link to='login' style= {textStyle}>Have an account? Log in!</Link></button>
+				<CheckBox value="Remember me" />
+				<StartBtn value="Sign up" link="login" />
+				<StartBtn value="Have an account? Log in!" link="login" />
 				<p className="mt-5 text-muted">&copy; 2020</p>
 			</form>   
     );

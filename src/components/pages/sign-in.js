@@ -6,7 +6,7 @@ const LoginPage = () => {
     return(
         <div className="text-center">
             <LoginForm />
-        </div>
+        </div> 
     )
 }
 
