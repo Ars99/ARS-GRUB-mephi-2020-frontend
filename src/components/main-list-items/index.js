@@ -1,3 +1,3 @@
-import ItemCards from './main-list-items'
+import MenuList from './main-list-items'
 
-export default ItemCards;
+export default MenuList;
