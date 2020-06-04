@@ -17,5 +17,6 @@ ReactDOM.render(
             </Router>
         </WineServiceContext.Provider>
     </Provider>
-    , document.getElementById('root'));
+    , document.getElementById('root')
+);
 

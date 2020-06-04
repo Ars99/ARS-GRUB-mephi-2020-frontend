@@ -6,7 +6,6 @@ import WithWineService from '../hoc';
 
 
 const App = ({WineService}) => {
-    console.log(WineService.getItems());
     return (
         <Router>
             <Switch>

@@ -6,7 +6,7 @@ const MenuListItem = ({menuItem}) => {
     return(
         <div className="card mb-3">
             <h3 className="card-header">{title}</h3>
-            <img className="card-img-top" data-src={src} alt="There will be picture"/>
+            <img className="card-img-top" src={src} alt="There will be picture"/>
             <div className="card-body">
                 <p className="card-text">{text}</p>
                 <div className="d-flex justify-content-between align-items-center">

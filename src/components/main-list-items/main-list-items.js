@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import MenuListItem from '../menu-item'
 import {connect} from 'react-redux';
 import WithWineService from '../hoc';
+import {menuLoaded} from '../../actions';
 
 class MenuList extends Component {
 
     componentDidMount() {
         const {WineService} = this.props;
-        // WineService.getItems()
-        //     .then(res => this.props.menuLoaded(res))
         let res = WineService.getItems();
         this.props.menuLoaded(res);
     }
@@ -40,35 +39,9 @@ const mapStateToProps = (state) => {
     }
 };
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        menuLoaded: (newMenu) => {
-            dispatch({
-                type: 'MENU_LOADED', 
-                payload: newMenu
-            })
-        }
-    }
+const mapDispatchToProps = {
+    menuLoaded
 };
 
-// const MenuList = () => {
-//     return(
-//         <div className="album py-5 bg-light">
-//             <div className="container">
-//                 <div className="row">
-//                     <div className="col-md-4">
-//                         <MenuListItem />
-//                     </div>
-//                     <div className="col-md-4">
-//                         <MenuListItem />
-//                     </div>
-//                     <div className="col-md-4">
-//                         <MenuListItem />
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
 
 export default WithWineService()(connect(mapStateToProps, mapDispatchToProps)(MenuList));
